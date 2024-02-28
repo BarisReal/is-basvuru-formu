@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpaort" content="width=device-width, initial-scale=1.0">
+    <title>İş Başvuru Formu</title>
+</head>
+<style type="text/css">
+    #bar1{
+        width: 550px;
+        height: 700px;
+        background-color: black   ;
+    }
+    body {
+background-image: repeating-radial-gradient(circle, white 10%, black 5%, darkred 25%);
+    }
+    #beyaz {
+        color: white;
+    }
+</style>
+<body   bgcolor="black">
+    <center>
+           <form action="basvuru.php" name="basvuru" method="POST">
+        <div id="bar1">
+
+ <legend id="beyaz" >İş Başvuru Formu</legend>
+ <h2 id="beyaz" >Kişisel Bilgiler</h2>
+ <label id="beyaz" for="tcKimlik" maxlenght="11" >TC Kimlik:</label><br>
+ <input type="text"  name="tcKimlik" ><br>
+
+ <label for="adSoyad" id="beyaz">Ad Soyad:</label><br>
+ <input type="text" name="adSoyad" ><br>
+
+ <label id="beyaz" >Yaş:</label><br>
+ <input type="text" name="yas" ><br>
+
+ <label id="beyaz" for="ePosta">E-posta:</label><br>
+ <input type="text"  name="ePosta" ><br> 
+ <br>
+ <label  id="beyaz" for="fotoEkle">Fotoğraf Ekle:</label>
+ <input id="beyaz" type="file" name="fotoEkle"><br>
+<br>
+ <label   id="beyaz"for="yazilimaGirisTarihi">Yazılıma Giriş Tarihi:</label><br>
+ <input type="date" name="date" ><br>
+ <br>
+
+ <label id="beyaz" for="radio">Yazılım Deneyimi</label><br>
+ <input type="radio" name="yazilimdeneyimi" ><label id="beyaz" >1-5 Yıl</label>
+ <input id="beyaz" type="radio" name="yazilimdeneyimi" ><label id="beyaz" >5-10 Yıl</label><br> 
+ <br>
+
+ <label id="beyaz" id="beyaz" for="yazilimDili">Programlama dilleri :</label><br>
+<select multiple id="myListbox">
+    <option value="option1">C#</option>
+    <option value="option2">PHP</option>
+    <option value="option3">Java</option>
+    <option value="option2">Python</option>
+    <option value="option3">Javascript</option>
+    
+</select><br>
+
+ <h2 id="beyaz">Form Onay</h2><br>
+ <input type="checkbox" id="formOnay" name="formOnay" checked>
+ <label id="beyaz"   for="formOnay">Yukarıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br>
+ <br>
+
+
+<input type="submit" value="Kaydet">
+<input type="reset" value="Temizle">
+</fieldset>
+</div>
+</form>
+</center>
+</body>
+</html>
