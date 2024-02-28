@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Başvuru Formu</title>
+</head>
+<style type="text/css">
+    #bar1{
+        width: 550px;
+        height: 595px;
+        background-color: black   ;
+    }
+    body {
+background-image: repeating-radial-gradient(circle, white 10%, black 5%, darkred 25%);
+    }
+    #beyaz {
+        color: white;
+    }
+</style>
+<body   bgcolor="black">
+    <center>
+      <form>
+        <div id="bar1">
+ <fieldset>
+ <legend id="beyaz" >İş Başvuru Formu</legend>
+ <h2 id="beyaz" >Kişisel Bilgiler</h2>
+ <label id="beyaz" for="tcKimlik">TC Kimlik:</label><br>
+ <input type="text" id="tcKimlik" name="tcKimlik" value=""><br>
+
+ <label for="adSoyad">Ad Soyad:</label><br>
+ <input type="text" id="adSoyad" name="adSoyad" value=""><br>
+
+ <label id="beyaz" for="yas">Yaş:</label><br>
+ <input type="text" id="yas" name="yas" value=""><br>
+
+ <label id="beyaz"  for="mailAdresi">Mail Adresi:</label><br>
+ <input type="text" id="mailAdresi" name="mailAdresi" value=""><br>
+ <br>
+ <label  id="beyaz" for="fotoEkle">Fotoğraf Ekle:</label>
+ <input id="beyaz" type="file" id="fotoEkle" name="fotoEkle"><br>
+<br>
+ <label   id="beyaz"for="yazilimaGirisTarihi">Yazılıma Giriş Tarihi:</label><br>
+ <br>
+
+ <input type="text" id="yazilimaGirisTarihi" name="yazilimaGirisTarihi" value=""><br>
+
+ <label id="beyaz" for="radio">Yazılım Deneyimi</label><br>
+ <input type="radio" name="yazilimdeneyimi" ><label id="beyaz" >1-5 Yıl</label>
+ <input id="beyaz" type="radio" name="yazilimdeneyimi" ><label id="beyaz" >5-10 Yıl</label><br> 
+ <br>
+
+ <label id="beyaz" id="beyaz" for="yazilimDili">Yazılım Dili :</label><br>
+ <input type="text" id="yazilimDili" name="yazilimDili" value=""><br>
+
+ <label id="beyaz" for="programlamaDilleri">Programlama Dilleri:</label><br>
+ <input type="text" id="programlamaDilleri" name="programlamaDilleri" value=""><br>
+
+ <input type="checkbox" id="formOnay" name="formOnay" checked>
+ <label id="beyaz"   for="formOnay">Yukarıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br>
+ <br>
+
+<input type="submit" value="Kaydet">
+<input type="reset" value="Temizle">
+</fieldset>
+</div>
+</form>
+</center>
+</body>
+</html>
